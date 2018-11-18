@@ -1,15 +1,22 @@
 body,
 html {
-    color: #fff;
-    background: #333131;
+    color: #bd7913;
+    background: #072601;
+    font-family: 'Lobster', cursive;
 }
 
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    
 }
+h5,
+p,
+h4,
+h3{
+font-family: 'Lobster', cursive; 
+}
+
 
 .wrapper-mobile,
 .nav {
@@ -114,6 +121,7 @@ div {}
     background: transparent;
     margin: 5px 0;
 }
+
 
 .top-info-item:nth-child(2) {
     font: 35px/55px 'Ubuntu Condensed';
@@ -661,9 +669,7 @@ h2 {
     visibility: hidden;
 }
 
-.mobile .slide-bottom {
-    display: none !important;
-}
+
 
 .feature-item:hover:before {
     animation-name: arrowing;
@@ -1265,9 +1271,7 @@ screen and (max-width: 850px) {
 
 @media screen and (max-height: 500px),
 screen and (max-width: 800px) {
-    .feature-item-descr {
-        display: none;
-    }
+   
 
     .section-text {
         font: 300 17px/22px 'Ubuntu';
@@ -1344,10 +1348,7 @@ screen and (max-width: 800px) {
         background-position: center top !important;
     }
 
-    .mobile .inst-section .social-wrap:before {
-        display: none;
-    }
-
+   
     .mobile .jr-insta-thumb ul.thumbnails {
         height: auto;
     }
