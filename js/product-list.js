@@ -18,16 +18,16 @@ class ProductList {
             productListDomString += 
                 `<div class="card col-12 col-md-6 col-lg-4 wew bounceInLeft">
                   <div class="card product">
-                    <img class="card-img-top" src="images/${product.image}" 
+                    <img class="card-img-top" src="images/images/${product.image}" 
                         alt="${product.title}">
                     <div class="card-body">
                       <h4 class="card-title">${product.title}</h4>
                       <p class="card-text">${product.description}</p>
                       <button class="btn btn-info" data-toggle="modal"
-                        data-target="#productInfoModal" data-id="${product.id}">Докладніше
+                        data-target="#productInfoModal" data-id="${product.id}">Подробнее
                       </button>
                       <button class="btn btn-primary buy" data-id="${product.id}">
-                        Грн ${product.price} - Купити
+                        ₴${product.price} - Купить
                       </button>
                     </div>
                   </div>
@@ -42,19 +42,19 @@ class ProductList {
             const product = this.getProductById(id);
             const modal = $('#productInfoModal');
             modal.find('.modal-body .card-img-top')
-                .attr('src', 'images/'+product.image)
+                .attr('src', 'images/images/'+product.image)
                 .attr('alt', product.title);
             modal.find('.modal-body .card-title').text(product.title);
             modal.find('.modal-body .card-text').text(product.description);
             modal.find('button.buy')
-                .text(`${product.price} - Купити`)
+                .text(`${product.price} ₴ Купить`)
                 .data('id', id);
         });
         $('.card.product button.buy, #productInfoModal button.buy').click( event => {
             const button = $(event.target);
             const id  = button.data('id'); 
             this.cart.addProduct(id);
-            window.showAlert('Товар додано у кошик');
+            window.showAlert('Товар добавлен в корзину');
         });
     }
 }
