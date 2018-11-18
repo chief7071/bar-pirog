@@ -1,17 +1,16 @@
-body,
-html {
-    color: #333131;
-    background: #333131;
+body {
+    background: url(../images/images/backg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 0 5px;
+    font-family: 'Lobster', cursive;
 }
-
-.navbar-brand {
-      font-family: 'Tangerine', serif;
-  font-size: 30px;
-  text-shadow: 4px 4px 4px #aaa;
+h2{
+font-family: 'Lobster', cursive; 
 }
-
-
-
 .pagination {
     text-align: center;
     justify-content: center;
@@ -38,8 +37,15 @@ html {
 
 }
 
-img {
-	width: 30%;
-	float: left;
-	margin: 1.66%;
+
+
+.navbar-brand {
+      font-family: 'Vollkorn', serif;
+  font-size: 30px;
+  text-shadow: 4px 4px 4px #aaa;
 }
+
+h2 { 
+    font-family: 'Vollkorn', serif
+}
+
