@@ -1,19 +1,24 @@
 body,
 html {
+   background-image:
+   radial-gradient(
+      circle,
+      skyblue,
+      #5297f7
+    );
+  background-size: cover;
     color: #bd7913;
-    background: #072601;
     font-family: 'Lobster', cursive;
-}
-
-html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     
 }
-h5,
+
 p,
 h4,
-h3{
+h3,
+span,
+h5{
 font-family: 'Lobster', cursive; 
 }
 
