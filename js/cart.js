@@ -31,9 +31,9 @@ class Cart {
         let cartDomSting = 
             `<div class="container">
                 <div class="row">
-                    <div class="col-5"><strong>Назва</strong></div>
-                    <div class="col-3"><strong>Ціна</strong></div>
-                    <div class="col-2"><strong>Кількість</strong></div>
+                    <div class="col-5"><strong>Наименование</strong></div>
+                    <div class="col-3"><strong>Цена</strong></div>
+                    <div class="col-2"><strong>Количество</strong></div>
                 </div>`;
         for (const id in this.cart) {
             const product = productList.getProductById(id);
@@ -88,14 +88,14 @@ class Cart {
                  this.saveCart();
                  this.updateBadge();
                  this.renderCart();
-                 window.showAlert('Дякуємо за замовлення');
+                 window.showAlert('Благодарим за заказ');
                  this.cartContainer.modal('hide');
              } )
              .fail( () =>
-                 window.showAlert('Помилка, спробуйте ще раз', false)
+                 window.showAlert('Ошибка , попробуйте ещё', false)
              );    
         } else {
-            window.showAlert('Заповність усі поля', false);
+            window.showAlert('Заполните все поля', false);
         }
     }
 }
