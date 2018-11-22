@@ -6,13 +6,17 @@ body {
     background-attachment: fixed;
     margin: auto;
     padding: 0 5px;
+    color: #00000;
     font-family: 'Ubuntu', sans-serif;
-    text-shadow: 1px 1px 1px silver,
-               -1px 1px 1px silver;
+   
 }
-h2{
+h1{
 font-family: 'Ubuntu', sans-serif;
+  text-shadow: 1px 1px 1px black,
+               -1px 1px 1px black;
 }
+
+
 .pagination {
     text-align: center;
     justify-content: center;
@@ -46,8 +50,3 @@ font-family: 'Ubuntu', sans-serif;
   font-size: 30px;
   text-shadow: 4px 4px 4px #aaa;
 }
-
-h2 { 
-    font-family: 'Ubuntu', sans-serif;
-}
-
