@@ -1,12 +1,10 @@
 body,
 html {
-  background: url(http://www.photos-public-domain.com/wp-content/uploads/2012/05/teal-dish-towel-with-diamond-pattern-texture.jpg);
+  background-color: skyblue;
     
   background-size: cover;
    
     font-family: 'Ubuntu', sans-serif;
-     text-shadow: 1px 1px 1px black,
-               -1px 1px 1px black;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     
@@ -15,7 +13,11 @@ h2
 {
     text-decoration: underline !important;
     font-family: 'Ubuntu', sans-serif !important;
-     color: #000000;
+     color: #ffffff;
+}
+
+.nav h4{
+    color: #000000;
 }
 p,
 h4,
