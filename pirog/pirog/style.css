@@ -18,6 +18,8 @@ h2
 
 .nav h4{
     color: #000000;
+    text-shadow: 0.5px 0.5px 0.5px white,
+               0.5px 0.5px 0.5px white;
 }
 p,
 h4,
