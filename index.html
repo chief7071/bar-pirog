@@ -1,53 +1,193 @@
-body {
-    background: url(../images/images/backg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: auto;
-    padding: 0 5px;
-    font-family: 'Ubuntu', sans-serif;
-    text-shadow: 1px 1px 1px silver,
-               -1px 1px 1px silver;
-}
-h2{
-font-family: 'Ubuntu', sans-serif;
-}
-.pagination {
-    text-align: center;
-    justify-content: center;
-}
+<!DOCTYPE html>
+<html lang="uk">
 
-.card {
-    height: 100%;
-}
-
-.alert {
-    position: fixed;
-    top: 50px;
-    width: 50%;
-    left: 25%;
-    z-index: 1051;
-}
-
-.btn {
-    padding: 0.75rem 0.7rem;
-}
-
-.back-to-top {
-    text-align: center;
-
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property=og:title content="Bar-Pirogъ" />
+    <meta property=og:description content="Bar-Pirogъ, ресторан, пирожковая, в Киеве" />
+    <title>Bar Pirogъ</title>
 
 
 
-.navbar-brand {
-      font-family: 'Ubuntu', sans-serif;
-  font-size: 30px;
-  text-shadow: 4px 4px 4px #aaa;
-}
+    <link rel="stylesheet" type="text/css" href="pirog/pirog/css/slick.css" />
 
-h2 { 
-    font-family: 'Ubuntu', sans-serif;
-}
+    <link rel="stylesheet" type="text/css" href="pirog/pirog/css/jquery.multiscroll.css" />
+    <link rel="stylesheet" type="text/css" href="pirog/pirog/style.css" />
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
+
+    <script src="pirog/pirog/js/waypoints.min.js"></script>
+    <script src="pirog/pirog/js/jquery.mousewheel.js"></script>
+
+    <script src="pirog/pirog/js/jquery.multiscroll.js"></script>
+
+    <script src="pirog/pirog/js/slick.min.js"></script>
+    <script src="pirog/pirog/js/main.js"></script>
+
+    <link href="images/images/icon.ico" type="image/x-icon" rel="icon">
+
+</head>
+
+<body>
+    <a class="global-logo">
+            <img src="images/images/logo.png" alt=logo>
+        </a>
+    <a href="javascript:void()" class="slide-bottom floating"></a>
+    <div class="nav">
+
+        <a href="javascript:void(0)" data-section="2" data-scroll="#about-us">Про нас</a>
+        <a href="javascript:void(0)" data-section="3" data-scroll="#menu">Меню</a>
+        <a href="javascript:void(0)" data-section="4" data-scroll="#life">Наша жизнь</a>
+        <a href="shop.html">Доставка</a>
+    </div>
+    <div class="wrapper-mobile"></div>
+    <div class="wrapper">
+        <div class="ms-left">
+            <div data-pos="left" data-section="1" class="ms-section">
+                <div class="section-content">
+
+                    <a class="logo">
+                            <img src="images/images/logo.png" alt=logo>
+                        </a>
+                    <div class="top-info">
+                        <div class="top-info-item">
+                            <h4>г.Киев ул. Владимирская 14</h4>
+
+
+                        </div>
+
+
+                        <div class="filials__info">
+
+                            <div>
+
+                                <p>
+                                    <a href="tel:+380956130239" target="_blank">
+                                        <font color="#ffffff">
+                                            <h5>+38 095 613 02 39</h5>
+                                        </font>
+                                    </a>
+                                </p>
+
+                                <p>
+
+                                    <a href="tel:+380980041101" target="_blank">
+                                        <font color="#ffffff">
+                                            <h5>+38 098 004 11 01</h5>
+                                        </font>
+                                    </a>
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-pos="left" data-section="3" class="ms-section features-section" id="about-us">
+                <div class="section-content left-content">
+                    <div class="section-text">
+
+                        <h4>  В укромном подвале старого города, где в любое время суток царит атмосфера уюта и веселья, наполненного интригой и магией того времени, в котором зарождалась барная культура и сервис, а блюда были вкусными, расположился наш Bar
+                            PirogЪ! Мы объединили виденье вкусов и предпочтений современного общества и людей которые ходили в питейные заведения в начале ХХ века!</h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div data-pos="left" data-section="5" class="ms-section menu-section" id="menu">
+                <div class="section-content left-content">
+                    <div class="section-text">
+
+                        <h4>Мы охотились за старинными рецептами Киева, адаптируя их под «Человека современного»! Фаршмак, пироги, наливки, котлета по-старо Киевски, крепкоалкогольный бар и классические коктейли, старокиевский торт… Да, в нашем баре Вы можете
+                            встретить любое блюдо и любой напиток, ведь в Киеве всегда помещалось много культур. Мы ориентированы на пожелания Наших Гостей и находимся в постоянном поиске новых гастрономических изысков для Вас!!!...</h4>
+
+                    </div>
+                    <div class="section-action">
+                        <a href="menu.pdf" target="_blank" class="watch-menu">
+                            <font color="#ffffff"> <span>•НАШЕ МЕНЮ</span> </font>
+                        </a>
+                        <a href="images/images/business.pdf" target="_blank" class="watch-menu">
+                            <font color="#ffffff"> <span>•БИЗНЕС ЛАНЧ</span> </font>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div data-pos="left" data-section="7" class="ms-section delivery-section" id="life">
+                <div class="section-content left-content">
+                    <div class="section-text">
+                        <div class="section-action">
+                            <a href="life.html" target="_blank" class="watch-menu">
+                                <font color="#b8d6d5"> <span>            •НАША ЖИЗНЬ            </span> </font>
+                            </a>
+
+                        </div>
+                        <p>   </p>
+                        <p>   </p>
+                        <p>   </p>
+                    </div>
+                    <div class="delivery__logos">
+                        <div class="delivery__logos-item">
+                            <a href="https://www.instagram.com/pirog.bar/?hl=ru" target="_blank">
+                                    <img src="images/images/instagram.png" alt=insta>
+                                </a>
+                        </div>
+                        <div class="delivery__logos-item">
+                            <a href="https://www.facebook.com/bar.pirog/" target="_blank">
+                                    <img src="images/images/facebook.png" alt=fb>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ms-right">
+            <div data-pos="right" data-section="2" class="ms-section">
+                <div class="image-slider-wrap">
+                    <div class="image-slider">
+                        <div class="image-slider-item">
+                            <img src="images/images/zal1.JPG" alt=zal1>
+                        </div>
+
+
+                        <div class="image-slider-item">
+                            <img src="images/images/zal1.jpg" alt=zal2>
+                        </div>
+
+
+                        <div class="image-slider-item">
+                            <img src="images/images/zal3.jpg" alt=zal3>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-pos="right" data-section="4" class="ms-section menu-section">
+                <div class="full-screen-section" style="background-image: url(images/images/5sect.jpg);"></div>
+            </div>
+            <div data-pos="right" data-section="6" class="ms-section menu-section">
+                <div class="full-screen-section" style="background-image: url(images/images/kartina.jpg);"></div>
+            </div>
+
+            <div data-pos="right" data-section="8" class="ms-section menu-section">
+                <div class="full-screen-section" style="background-image: url(images/images/life.JPG);"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
