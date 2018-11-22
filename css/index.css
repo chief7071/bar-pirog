@@ -6,10 +6,12 @@ body {
     background-attachment: fixed;
     margin: auto;
     padding: 0 5px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 1px 1px 1px silver,
+               -1px 1px 1px silver;
 }
 h2{
-font-family: 'Lobster', cursive; 
+font-family: 'Ubuntu', sans-serif;
 }
 .pagination {
     text-align: center;
@@ -40,12 +42,12 @@ font-family: 'Lobster', cursive;
 
 
 .navbar-brand {
-      font-family: 'Vollkorn', serif;
+      font-family: 'Ubuntu', sans-serif;
   font-size: 30px;
   text-shadow: 4px 4px 4px #aaa;
 }
 
 h2 { 
-    font-family: 'Vollkorn', serif
+    font-family: 'Ubuntu', sans-serif;
 }
 
